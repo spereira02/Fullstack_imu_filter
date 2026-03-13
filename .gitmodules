@@ -1,0 +1,6 @@
+[submodule "esp32_firmware"]
+	path = esp32_firmware
+	url = https://github.com/spereira02/esp32_firmware.git
+[submodule "madgwick_sensor_fusion"]
+	path = madgwick_sensor_fusion
+	url = https://github.com/spereira02/madgwick_sensor_fusion.git
