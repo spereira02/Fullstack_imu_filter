@@ -33,7 +33,11 @@ Pipeline stages:
 
 ## Demo
 
-<video src="media/imu_rviz_demo.mp4" controls width="700"></video>
+
+
+https://github.com/user-attachments/assets/7fa7b564-36bb-4191-b4d8-bdf679163d4d
+
+
 
 ---
 
