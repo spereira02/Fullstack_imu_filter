@@ -31,6 +31,10 @@ Pipeline stages:
 5. **Visualization**  
    RViz visualizes the orientation estimate and coordinate frames.
 
+## Demo
+
+<video src="media/imu_rviz_demo.mp4" controls width="700"></video>
+
 ---
 
 ## Repository Structure
