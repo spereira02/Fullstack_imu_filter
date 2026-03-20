@@ -206,3 +206,13 @@ From a **robotics systems perspective**:
 - ICM-20948 IMU
 - Madgwick sensor fusion algorithm
 - RViz
+
+## Troubleshooting & Engineering Challenges
+
+During development, several integration issues had to be diagnosed across both the embedded and ROS2 sides of the pipeline:
+
+- **Serial throughput bottleneck:** Although the IMU was sampled at **50 Hz**, the effective ROS2 publish rate initially dropped to around **12 Hz**. By increasing the UART baudrate, the pipeline reached a stable **~50 Hz**, showing that the main bottleneck was communication bandwidth rather than filter computation.
+
+- **Timestamp mismatch / `TF_OLD_DATA`:** RViz2 intermittently reported `TF_OLD_DATA` errors. The root cause was an unsynchronized timestamp source on the MCU, which produced message header timestamps that did not match ROS2 host time. After switching to synchronized epoch-based timestamps, TF timing became consistent.
+
+- **System-level debugging workflow:** These issues were diagnosed using tools such as `ros2 topic hz`, topic echoing, TF inspection, and targeted testing across both firmware and ROS2 nodes. This project was a strong exercise in debugging timing, transport, and middleware interactions in a real robotics pipeline.
