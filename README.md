@@ -76,6 +76,15 @@ Fullstack_imu_filter
     └── architecture.png
 ```
 
+## My Technical Contributions
+
+• Implemented ESP32 firmware for ICM-20948 sensor acquisition via I²C  
+• Built the micro-ROS interface publishing IMU data to ROS2 topics  
+• Integrated the Madgwick orientation filter package into the ROS2 pipeline  
+• Configured sensor topic flow and frame conventions for correct orientation estimation  
+• Debugged frame alignment and timestamp issues affecting RViz visualization  
+• Diagnosed and resolved communication bottleneck caused by insufficient UART baud rate
+
 ### Component Repositories
 
 **Embedded firmware**
