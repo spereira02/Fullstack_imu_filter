@@ -46,7 +46,9 @@ https://github.com/user-attachments/assets/7fa7b564-36bb-4191-b4d8-bdf679163d4d
 
 The system uses a simple TF tree for visualization in RViz:
 
-![TF Tree](media/tf2_frame.jpg)
+<p align="center">
+  <img src="media/tf2_frame.jpg" width="500">
+</p>
 
 `imu_link` is the sensor frame attached to the IMU, and `odom` is used as the fixed reference frame in RViz.  
 A static transform between `odom` and `imu_link` is published using ROS2 TF.
