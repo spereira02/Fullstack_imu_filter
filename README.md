@@ -32,7 +32,9 @@ Pipeline stages:
    RViz visualizes the orientation estimate and coordinate frames.
 
 ## Demo
+Live IMU orientation estimation pipeline.
 
+ESP32 reads the IMU → data sent via micro-ROS → Madgwick filter → orientation visualized in RViz.
 
 
 https://github.com/user-attachments/assets/7fa7b564-36bb-4191-b4d8-bdf679163d4d
